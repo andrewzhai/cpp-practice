@@ -18,11 +18,12 @@ int main() {
   else{
     
     string name;
+    int num;
     while(infile>>name){
-      
+      infile>>num;
       cout<<name<<endl;
       cout<<"************"<<endl;
-      
+      cout<<num*10<<endl;
     }
 
   }
