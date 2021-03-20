@@ -3,12 +3,13 @@
 #include<string>
 #include<istream>
 using namespace std;
+#include<vector>
 
 int main() {
 
 
 
-
+  int twod[4][2];
 
     ifstream infile("seq_data.txt");
   if(!infile){
@@ -19,16 +20,15 @@ int main() {
     
     string name;
     int num;
-    while(infile>>name){
-      infile>>num;
-      cout<<name<<endl;
-      cout<<"************"<<endl;
-      cout<<num*10<<endl;
+    int i=0;
+    while(infile>>twod[i][0]){
+      infile>>twod[i][1];
+      i++;
     }
 
   }
 
 
   
-  std::cout << "Hello World!\n";
+  std::cout << "Hello World!\n"<<twod[3][0];
 }
